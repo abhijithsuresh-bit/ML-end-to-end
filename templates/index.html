@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="text-align: center;">Welcome to the ML End-to-End Project House Price Prediction {{name}}</h1>
+
+    <form action="/predict_form" method="post">
+
+        CRIM :<input type="number" , placeholder="CRIM" , name="CRIM"><br>
+        ZN :<input type="number" , placeholder="ZN" , name="ZN"><br>
+        INDUS :<input type="number" , placeholder="INDUS" , name="INDUS"><br>
+        CHAS :<input type="number" , placeholder="CHAS" , name="CHAS"><br>
+        NOX :<input type="number" , placeholder="NOX" , name="NOX"><br>
+        RM :<input type="number" , placeholder="RM" , name="RM"><br>
+        AGE :<input type="number" , placeholder="AGE" , name="AGE"><br>
+        DIS :<input type="number" , placeholder="DIS" , name="DIS"><br>
+        RAD :<input type="number" , placeholder="RAD" , name="RAD"><br>
+        TAX :<input type="number" , placeholder="TAX" , name="TAX"><br>
+        PTRATIO :<input type="number" , placeholder="PTRATIO" , name="PTRATIO"><br>
+        B :<input type="number" , placeholder="B" , name="B"><br>
+        LSTAT :<input type="number" , placeholder="LSTAT" , name="LSTAT"><br>
+        <input type="submit" value="Predict Price">
+
+    </form>
+    {% if predicted_price %}
+        <h2 style="text-align: center;">Predicted Price: {{predicted_price}}</h2>
+    {% endif %}
+</body>
+</html>
