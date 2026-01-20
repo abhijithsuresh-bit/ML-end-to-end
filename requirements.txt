@@ -6,3 +6,5 @@ seaborn
 flask
 FastAPI
 python-multipart
+gunicorn
+uvicorn

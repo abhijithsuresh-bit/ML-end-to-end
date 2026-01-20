@@ -23,3 +23,12 @@ Install all the required Packages
 '''
 pip install -r requirements.txt
 '''
+
+We are deploying the web-app in heroku so that we need to create a 
+'''
+Procfile
+'''
+Procfile simply means when this web-app load what commands need to run 1st
+
+Here the commands are related to gunicorn
+gunicorn is the purest python https server for wsgi application it allows we to run python application concurrently by running multiple processes
